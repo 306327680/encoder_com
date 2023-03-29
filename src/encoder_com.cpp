@@ -88,6 +88,7 @@ int main(int argc, char** argv)
             encoder2_pub.publish(msg);
             encoder.pose.pose.position.x = o1/1000;
             encoder.pose.pose.position.y = o2/1000;
+            encoder_pub.publish(encoder);
             std::cout <<  o1/1000<<"  "<<o2/1000  << std::endl;
         }
 
